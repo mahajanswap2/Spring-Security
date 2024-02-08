@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<%@ page language="java" import="org.owasp.esapi.*" %>
+<%@page import="com.kotak.nri.online.accountopen.common.Constants"%>
+<%@page import="org.apache.commons.lang.StringUtils"%>
+<!--[if lt IE 9]><html class="ltIE9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en-US" class="no-ie9">
+
+<head>
+    <title>Kotak Bank</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="noimageindex, nofollow, noindex, nosnippet">
+    <meta name="author" content="" />
+    <meta name="theme-color" content="#e73c4c" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="twitter:site" content="" />
+    <meta property="twitter:account_id" content="" />
+    <meta property="twitter:creator" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:card" content="" />
+    <meta property="fb:page_id" content="" />
+    <meta property="fb:admins" content="" />
+    <meta property="og:site_name" content="Moz" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <link rel="icon" th:href="@{/xpress/assets/images/favicon.ico}" />
+    <!-- Latest compiled and minified CSS -->
+    <!--css file link start -->
+    <link rel="stylesheet" th:href="@{/xpress/assets/css/dyv4rsx.css}"/>">
+    <link type="text/css" th:href="@{/xpress/assets/css/bootstrap/bootstrap.css}" />" rel="stylesheet" />
+    <link type="text/css" th:href="@{/xpress/assets/css/style-new.css}" rel="stylesheet' />
+	<link type="text/css" th:href="@{/xpress/assets/css/ui-used.css}" rel="stylesheet' />
+	 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11061000048"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11061000048');
+</script>
+<!-- Event snippet for Page view conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11061000048/IXP2CLTnvIcYEPDupZop'});
+</script>
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '556464326356471');
+fbq('track', 'PageView');
+</script>
+</head>
+<body class="home" onload="callFunction();">
+<noscript><img height="1" width="1" style="display:none" src=https://www.facebook.com/tr?id=556464326356471&ev=PageView&noscript=1/></noscript>
+    <!-- <input type="text"> -->
+
+    <div class="homeSec scrHeight -introPage">
+      <div class="logo">
+       <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" viewBox="0 0 125 32">
+          <g id="Kotak_logo" transform="translate(-10 -5)">
+            <g id="Layer_1" data-name="Layer 1">
+              <g id="Logo" transform="translate(10 5)">
+                <ellipse id="Ellipse_1812" data-name="Ellipse 1812" cx="18.004" cy="15.666" rx="18.004" ry="15.666" fill="#003770" />
+                <path id="Path_22398" data-name="Path 22398" d="M24.4,10.265,28.578,8.87,28.6,31.748l-4.21,1.438Z" transform="translate(-8.587 -5.237)" fill="#e20613" />
+                <path
+                  id="Path_22399"
+                  data-name="Path 22399"
+                  d="M27.6,24.25c-1.816,2.216-3.569,4.487-6.86,4.487-4.648,0-6.86-4.552-6.86-8.358S15.611,12.4,20.131,12.4a7.108,7.108,0,0,1,4.99,2.508v3.1a9.892,9.892,0,0,0-4.424-1.3c-2.874-.054-5.407,1.211-5.342,4.076,0,1.979,1.966,3.319,3.889,3.319,2.949,0,4.733-2.725,6.229-4.79.417-.541,1.581-2.162,1.774-2.379,1.656-2.346,3.569-4.487,6.86-4.487,3.879,0,6.058,3.157,6.667,6.422H39a4.151,4.151,0,0,0-3.4-1.708c-3.045,0-4.862,2.833-6.411,4.93C29.213,22.1,28.027,23.731,27.6,24.25ZM40.849,22.2c-.4,3.244-2.212,6.584-6.176,6.584-2.308,0-4.114-1.6-5.342-3.557V22.952a10.941,10.941,0,0,0,4.8,1.654c2.137,0,4.167-.811,4.99-2.411Z"
+                  transform="translate(-9.306 -4.951)"
+                  fill="#fff"
+                />
+                <g id="Text" transform="translate(0 -0.09)">
+                  <path id="Path_22400" data-name="Path 22400" d="M46.16,31.766h.652v-3.3l3.163,3.3h.887l-3.43-3.492,3.152-3.114H49.75l-2.938,2.962V25.16H46.16Z" transform="translate(-7.096 -3.915)" fill="#003770" />
+                  <path id="Path_22401" data-name="Path 22401" d="M51.685,29.191c0-1.081.545-2.011,1.581-2.011s1.581.93,1.581,2.011S54.292,31.2,53.266,31.2,51.685,30.348,51.685,29.191Zm-.684,0a2.28,2.28,0,0,0,1.029,2.19,2.222,2.222,0,0,0,2.4,0,2.28,2.28,0,0,0,1.029-2.19A2.28,2.28,0,0,0,54.427,27a2.222,2.222,0,0,0-2.4,0A2.28,2.28,0,0,0,51,29.191Z" transform="translate(-6.765 -3.794)" fill="#003770" fill-rule="evenodd" />
+                  <path id="Path_22402" data-name="Path 22402" d="M58.336,26.913H57.268V25.54l-.588.205v1.168h-.94v.508h.94v2.822c0,.876,0,1.611,1.068,1.611a2.178,2.178,0,0,0,.716-.13v-.5a1.312,1.312,0,0,1-.534.108c-.481,0-.641-.357-.641-.789V27.421h1.068Z" transform="translate(-6.439 -3.884)" fill="#003770" />
+                  <path
+                    id="Path_22403"
+                    data-name="Path 22403"
+                    d="M61.868,29.5c0,.53,0,1.741-1.421,1.741-.534,0-.983-.227-.983-.865,0-1.081,1.207-1.168,2.233-1.168h.171Zm0,2.162h.577a7.506,7.506,0,0,1,0-1.006V28.5c0-1.265-.5-1.806-1.678-1.806a3.651,3.651,0,0,0-1.4.335V27.6a2.521,2.521,0,0,1,1.4-.389c.8,0,1.068.411,1.068,1.233v.249h-.118c-1.229,0-2.938.076-2.938,1.7,0,.432.214,1.362,1.571,1.362a1.674,1.674,0,0,0,1.517-.9h0Z"
+                    transform="translate(-6.231 -3.79)"
+                    fill="#003770"
+                    fill-rule="evenodd"
+                  />
+                  <path id="Path_22404" data-name="Path 22404" d="M63.53,31.8h.588V29.327L66.479,31.8h.812l-2.607-2.681,2.329-2.141h-.759l-2.137,1.979V24.71H63.53Z" transform="translate(-5.906 -3.951)" fill="#003770" />
+                  <path id="Path_22405" data-name="Path 22405" d="M70.41,31.766h.641V25.82h.021l2.447,5.947h.556l2.372-5.947h.021v5.947h.641V25.16h-.93L73.8,30.977,71.4,25.16H70.41Z" transform="translate(-5.435 -3.915)" fill="#003770" />
+                  <path
+                    id="Path_22406"
+                    data-name="Path 22406"
+                    d="M80.837,29.5c0,.53,0,1.741-1.41,1.741-.545,0-.994-.227-.994-.865,0-1.081,1.218-1.168,2.233-1.168h.171Zm0,2.162h.577a7.506,7.506,0,0,1,0-1.006V28.5c0-1.265-.492-1.806-1.678-1.806a3.651,3.651,0,0,0-1.4.335V27.6a2.521,2.521,0,0,1,1.4-.389c.8,0,1.068.411,1.068,1.233v.249h-.118c-1.229,0-2.928.076-2.928,1.7,0,.432.214,1.362,1.571,1.362a1.685,1.685,0,0,0,1.517-.9h0Z"
+                    transform="translate(-4.932 -3.79)"
+                    fill="#003770"
+                    fill-rule="evenodd"
+                  />
+                  <path id="Path_22407" data-name="Path 22407" d="M82.51,31.8H83.1V29.219c0-.843.363-1.838,1.41-1.838s1.133.714,1.133,1.546V31.8h.6V28.916c0-1.189-.342-2.054-1.624-2.054a1.633,1.633,0,0,0-1.5.93h0V24.71h-.588Z" transform="translate(-4.606 -3.951)" fill="#003770" />
+                  <path id="Path_22408" data-name="Path 22408" d="M87.968,24.88h-.6v.8h.6Zm-.6,6.909h.6V26.967h-.6Z" transform="translate(-4.273 -3.937)" fill="#003770" fill-rule="evenodd" />
+                  <path id="Path_22409" data-name="Path 22409" d="M89.321,31.641h.588V28.971c0-.8.331-1.752,1.41-1.752.812,0,1.133.584,1.133,1.492v2.93h.588V28.56c0-1.081-.449-1.86-1.624-1.86a1.527,1.527,0,0,0-1.549.973h0v-.854H89.3a10.276,10.276,0,0,1,0,1.135Z" transform="translate(-4.141 -3.79)" fill="#003770" />
+                  <path id="Path_22410" data-name="Path 22410" d="M94.56,29.352c0-.941.3-2.011,1.421-2.011s1.41,1.135,1.41,2.011-.363,2.011-1.41,2.011S94.56,30.335,94.56,29.352Zm3.419-4.682h-.588v3.081h0a1.612,1.612,0,0,0-1.485-.93c-1.4,0-1.966,1.081-1.966,2.53s.652,2.53,1.966,2.53a1.525,1.525,0,0,0,1.485-.887h0v.768h.588Z" transform="translate(-3.823 -3.954)" fill="#003770" fill-rule="evenodd" />
+                  <path id="Path_22411" data-name="Path 22411" d="M99.053,31.645h.588V29.266c0-.876.256-1.935,1.186-1.935a1.869,1.869,0,0,1,.438,0v-.616a1.606,1.606,0,0,0-.417-.065,1.437,1.437,0,0,0-1.229,1.081h0V26.8H99a10.24,10.24,0,0,1,0,1.081Z" transform="translate(-3.477 -3.794)" fill="#003770" />
+                  <path
+                    id="Path_22412"
+                    data-name="Path 22412"
+                    d="M104.678,29.5c0,.53,0,1.741-1.421,1.741-.534,0-.983-.227-.983-.865,0-1.081,1.207-1.168,2.233-1.168h.171Zm0,2.162h.577a7.506,7.506,0,0,1,0-1.006V28.5c0-1.265-.5-1.806-1.678-1.806a3.651,3.651,0,0,0-1.4.335V27.6a2.521,2.521,0,0,1,1.4-.389c.791,0,1.068.411,1.068,1.233v.249h-.118c-1.229,0-2.938.076-2.938,1.7,0,.432.214,1.362,1.571,1.362a1.674,1.674,0,0,0,1.517-.9h0Z"
+                    transform="translate(-3.299 -3.79)"
+                    fill="#003770"
+                    fill-rule="evenodd"
+                  />
+                  <path id="Path_22413" data-name="Path 22413" d="M109.453,25.731h.887c.545,0,1.421.13,1.421,1.081s-.908,1.233-1.592,1.233h-.716Zm0,2.887h.566c.951,0,1.955.119,1.955,1.3s-.983,1.287-1.848,1.287h-.673Zm-.652,3.146h1.282c1.357,0,2.522-.443,2.522-1.881a1.55,1.55,0,0,0-1.389-1.568h0a1.359,1.359,0,0,0,1.186-1.5c0-1.265-1-1.633-2.062-1.633h-1.56Z" transform="translate(-2.807 -3.913)" fill="#003770" fill-rule="evenodd" />
+                  <path id="Path_22414" data-name="Path 22414" d="M116.343,29.5c0,.53,0,1.741-1.41,1.741-.534,0-.983-.227-.983-.865,0-1.081,1.207-1.168,2.233-1.168h.16Zm.064,2.162h.577a7.5,7.5,0,0,1,0-1.006V28.5c0-1.265-.5-1.806-1.678-1.806a3.651,3.651,0,0,0-1.4.335V27.6a2.52,2.52,0,0,1,1.4-.389c.791,0,1.068.411,1.068,1.233v.249h-.107c-1.239,0-2.938.076-2.938,1.7,0,.432.214,1.362,1.571,1.362a1.685,1.685,0,0,0,1.517-.9h0Z" transform="translate(-2.496 -3.79)" fill="#003770" fill-rule="evenodd" />
+                  <path id="Path_22415" data-name="Path 22415" d="M118,31.641h.588V28.971c0-.8.342-1.752,1.41-1.752.823,0,1.133.584,1.133,1.492v2.93h.588V28.56c0-1.081-.449-1.86-1.624-1.86a1.505,1.505,0,0,0-1.539.973h0v-.854H118v4.822Z" transform="translate(-2.176 -3.79)" fill="#003770" />
+                  <path id="Path_22416" data-name="Path 22416" d="M122.89,31.8h.588V29.327l2.351,2.476h.823l-2.607-2.681,2.319-2.141h-.748l-2.137,1.979V24.71h-.588Z" transform="translate(-1.841 -3.951)" fill="#003770" />
+                  <path id="Path_22417" data-name="Path 22417" d="M61.828,20.743c-1.7,0-2.4-1.427-2.4-3.027s.705-3.049,2.4-3.049,2.393,1.427,2.393,3.049S63.505,20.743,61.828,20.743Zm0,2.616c3.526,0,6.208-2.076,6.208-5.644s-2.682-5.665-6.208-5.665-6.208,2.108-6.208,5.665S58.3,23.359,61.828,23.359Z" transform="translate(-6.448 -4.979)" fill="#e20613" fill-rule="evenodd" />
+                  <path id="Path_22418" data-name="Path 22418" d="M66.92,15.177h2.137v4.4c0,2.562.8,4.044,4.1,4.044a16.668,16.668,0,0,0,2.308-.216l-.118-2.422a6.751,6.751,0,0,1-1.133.141c-1.165,0-1.475-.66-1.475-1.968V15.177h2.586V12.56H72.722V8.83l-3.579,1.265v2.422H67.005Z" transform="translate(-5.674 -5.24)" fill="#e20613" />
+                  <path id="Path_22419" data-name="Path 22419" d="M86.85,23.36h3.686V18.019h.043l2.949,5.341h4.466l-4.018-5.838L97.7,12.559H93.656L90.579,17.1h-.043V8.84l-3.686,1.3Z" transform="translate(-4.309 -5.24)" fill="#e20613" />
+                  <path id="Path_22420" data-name="Path 22420" d="M46.42,23.36h3.7V18.019h.043l2.949,5.341h4.466l-4.018-5.838,3.708-4.963H53.226L50.16,17.1h-.043V8.84l-3.7,1.233Z" transform="translate(-7.078 -5.24)" fill="#e20613" />
+                  <path
+                    id="Path_22421"
+                    data-name="Path 22421"
+                    d="M78.8,19.7c0-1.081.994-1.449,2.255-1.449a12.467,12.467,0,0,1,1.581.065A2.465,2.465,0,0,1,80.321,20.9C79.466,20.9,78.8,20.457,78.8,19.7Zm7.479,3.46a13.967,13.967,0,0,1-.2-2.584V16.51c0-3.341-2.383-4.53-5.139-4.53a11.133,11.133,0,0,0-4.274.768l.064,2.562a6.974,6.974,0,0,1,3.441-.811c1.346,0,2.447.389,2.468,1.881A11.978,11.978,0,0,0,80.9,16.24c-2,0-5.577.4-5.577,3.73,0,2.379,1.9,3.449,4.039,3.449a3.689,3.689,0,0,0,3.419-1.979h0c0,.562.064,1.135.085,1.719Z"
+                    transform="translate(-5.099 -4.985)"
+                    fill="#e20613"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </g>
+              <rect id="Rectangle_23004" data-name="Rectangle 23004" width="125" height="32" transform="translate(10 5)" fill="none" />
+            </g>
+          </g>
+        </svg>
+
+
+      </div>
+        
+        <div class="welcomeText">
+        <h1><s:property value='homeHeading' escape='false'/></h1>
+        <div class="subText"><s:property value='homeMessage' escape='false'/> </div>
+      </div>
+
+      <div class="How_do_we_get_in_touch_with_you p-0">
+        <div class="phoneInHand" id="phoneInHand">
+         <img src="https://www.kotak.com/content/dam/Kotak/herosliderbanner/savings-account-d.jpg" alt="" class="" width="100%">
+        </div>
+        <div class="touch_with_you">
+          <form class="touch_with_you_form showShareYourIdentityForm needs-validation" id="showShareYourIdentity" action="update-xpress-home.action?<s:property value='parameterString'/>" method="post">
+            <label for="" class="form-label">How do we get in touch with you?</label>
+            <div class="form-group">
+              <input type="text" name="userName" placeholder="Name" id="userName" value="<s:property value='name'/>" class="form-control noShadow" autofocus required />
+              <div class="invalid-feedback mb-3">
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/Icons/invalid.svg" alt="" class="" />
+                  <span>Enter a valid name to continue.</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="mobileNumber" placeholder="Mobile" id="mobileNumber" value="<s:property value='mobileNumber'/>" onkeypress="numberOnly(event)" maxlength="10" class="form-control noShadow" autofocus required />
+              <div class="invalid-feedback mb-3">
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/Icons/invalid.svg" alt="" class="" />
+                  <span>Enter a valid mobile number to continue.</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" id="email" value="<s:property value='email'/>" class="form-control noShadow" required />
+              <div class="invalid-feedback mb-3">
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/Icons/invalid.svg" alt="" class="" />
+                  <span>Enter a valid email address to continue.</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="pincode" placeholder="Pincode" id="pincode" onkeypress="numberOnly(event)" value="<s:property value='pincode'/>" maxlength="6" class="form-control noShadow" autofocus required />
+              <div class="invalid-feedback mb-3">
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/Icons/invalid.svg" alt="" class="" />
+                  <span>Enter a valid pincode to continue.</span>
+                </div>
+              </div>
+            </div>
+            <div class="error-feedback mb-3" id="errorLabel" style="display: none">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/Icons/invalid.svg" alt="" class="">
+                            <span id="errorText"><s:property value="globalErrMsg" /></span>
+                        </div>
+                    </div>
+            <div class="featuresSavingsAccount">
+              <div class="featuresSavingsAccountText">
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary showShareYourIdentity">OPEN NOW</button>
+                </div>
+                <div class="text-center pt-4"><div class="link" style="text-decoration: underline;"><a th:href="#" onclick="saveFeaturedSaving()">Resume Application</a></div></div>
+                <div class="text-center pt-4 features-bttom-tc">Before you begin your journey, please keep your original PAN and Aadhaar ready with you.</div>
+                
+                <h4><s:property value='headingMessage'/></h4>
+                <div class="featuresDetails">
+                  <ul class="list-inline mb-0">
+                    <li>
+                      <div class="iconFD">
+                        <img src="assets/images/Illustrations/Feature_1.svg" alt="" class="" />
+                      </div>
+                      <div class="textFD">
+                        <div class="text"><s:property value='messagesOne'/></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="iconFD">
+                        <img src="assets/images/Illustrations/Feature_2.svg" alt="" class="" />
+                      </div>
+                      <div class="textFD">
+                        <div class="text"><s:property value='messagesTwo'/></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="iconFD">
+                        <img src="assets/images/Illustrations/Feature_3.svg" alt="" class="" />
+                      </div>
+                      <div class="textFD">
+                        <div class="text"><s:property value='messagesThree'/></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="slider scrHeight could_not_connect_to_Aadhaar">
+            <div class="sliderContainer">
+                <div class="dash"></div>
+                <div class="sliderErrorSec could_not_connect_to_Aadhaar_blk">
+                    <label for="" class="">Terms & Conditions for Opening an Account:</label>
+                    <div style="height: 50vh; overflow-y:scroll !important;" class='wrapper' id='wrapper'>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">1. Any Resident Indian who is citizen of India as per FEMA guidelines &amp; above 18 years provides his/her details in the application form for opening an account offered by Kotak Mahindra Bank Ltd (KMBL) is a Customer.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">2. By providing his/her details, customer agrees to the terms and conditions of the Bank as listed in http://www.kotak.com/terms-conditions.html&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">3. By sharing all the information, customer consents to provide his/her name, contact details and other information on an at will basis with Bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">4. Bank shall not be liable for any connectivity/ signal/ data issues leading to non-completion or wrong/false/incomplete information being provided by the customer leading to the incompletion of his/her application.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">5. The customer herewith agrees to provide his/ her Valid Aadhaar number voluntary (if customer wishes to open limited KYC account) and valid PAN Card Number. He/she understands that opening an account is subject to correct, complete and accurate information is provided.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">6. Customer agrees that the name in the account will be the customer name as per his/her name mentioned on Aadhaar .&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">7. Application once submitted cannot be withdrawn by the customer. Bank shall not be liable to pay for any costs (technical/ data plan related or otherwise) incurred by the customer in the course of sharing his/her details on the application.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">8. The customer herewith agrees to provide the accurate documentation and information as listed in the application for the purpose of account opening. Customer understands and agrees that failure to provide requisite documentation and information shall result in rejection of application by the Bank. The customer agrees that Bank has every right to reject the account opening application, if there is any erroneous, incomplete or misleading information provided by the customer or for any other reason whatsoever with/without assigning any reason or if KYC documents submitted do not comply with the KYC norms of the Bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">9. This account opening process is not available for existing Kotak Bank customers who have a customer relationship number (CRN) with the bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">10. This account opening process is also not available for customers who are FATCA reportable. Such customers are requested to approach the branch and to comply with requirement of opening an account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">11. Bank reserves the right to take necessary action, legal or otherwise, if it finds any wilful modification/ withholding of information or misrepresentation by the customer.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">12. Customers, who would like to deposit funds using the funding facility available while account opening, can do so only from their own bank account and not from a Third Party Bank account. Bank shall be at liberty to refuse to open the accounts funded from a Third Party Bank account at its sole discretion.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">13. Customer understands and agrees that interest on the amount funded online will be paid subject to activation of the account and only from the date when the funds has been credited into the account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">14. The customer shall not enjoy the services provided by the Bank unless the customer onboarding process is complete.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">15. Customer declares and confirms that the Bank shall be entitled to rely on all/any communication, information and details provided on the electronic form and all such communications, information and details shall be final and legally binding on the Customer.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">16. Customer understands and confirms that the Bank has every right to close or debit freeze the account, if the details provided by him/her are found to be inaccurate, incorrect or false by the Bank or for any other reason whatsoever without assigning any reason thereof. In such an event the bank shall not be liable to pay any interest on the amount of deposit &amp; the refund of amount deposited in the account will be refunded to the source account. In such an event, bank will retain the documents / photographs (if any) and any other signed document submitted.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">17. This application is available for opening a Salary Savings Account by Resident Indian Individuals only.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">18. The Bank reserves the right to cancel the Customer Relationship Number (CRN) and Account Number (A/C) allotted to the customer, if the customer does not complete the verification process within the allotted time.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">19. The Bank reserves the right to hold the accounts in Debit Freeze or close the Account even after account activation in case of any discrepancy found as part of regular monitoring and document verification activities.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">20. The customer agrees to provide the necessary details (Mobile, Email etc.,) as per his requirement at the time of submission of details through the application. Bank shall not bear any liability for any loss arising out of customer&rsquo;s failure to do so.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">21. The customer agrees that the email id given by him/her will be updated in the account only post self-verification by the customer over an email sent by the bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">22. The customer herewith agrees to be contacted by the bank to receive information in respect of account maintenance, alerts, payments due, updates on existing and new products, servicing of account for sales, marketing or servicing their relationship with KMBL, its group companies/associates or agents through Telephone/Mobile/SMS/Email etc. Further he/she understands that the consent to receive calls/communications shall be valid and shall prevail over their current or any subsequent registration of their mobile number for NDNC and shall continue to be treated as customer consent/acceptance.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">23. The customer authorizes Bank to share his/her mobile number and address with the respective mobile operator to verify customer&apos;s address at any point of time.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">24. KMBL is not offering Digital Account onboarding facility to certain set of customers (persons operating with thumb impression, sick /incapacitated customers or any other persons, which the bank feels that may require additional controls / diligence to safeguard Bank / Customer interest). Customer may visit our Branch to select other products available. If it is detected that the said persons have opened the Accounts via this digital mode, Bank reserves the right to offer another account and close this Digital account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">25. The customer herewith agrees that if the application is rejected, Bank will retain the documents / Photographs and any other signed document submitted by the customer on the application or otherwise.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">26. The customer confirms that the account is being opened by him/her for his/her own use and that the mobile number, SIM &amp; device used for opening the account belongs to him and same have not been shared by him with any other individual. The customer further confirms that he has not shared the credentials pertaining to the account opening with any other person. In case of any discrepancy, the bank reserves the right to block or close the account without any notice.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">27. Customer confirm to have read, understood and will be bound to/ abide by the Terms and Conditions of account opening and the general terms applicable to account as available on Bank&rsquo;s website at www.kotak.com. Once an account is opened, the terms and conditions listed as under shall also apply, as per the product selected by the customer.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><span th:style=="font-size:15px;">T&amp;Cs for Kotak Account &ndash; for Limited KYC accounts opened through OTP based Aadhaar authentication&nbsp;</span></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">1. The customer herewith confirms that he/she has not used the OTP based AADHAAR (e-KYC) verification to open any other bank account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">2. If opened through UIDAI based OTP, it will be a limited KYC account, in which you cannot have a credit balance of more than 1 Lakh. Your overall cumulative deposit in such an account cannot exceed 2 Lakhs in a F.Y., unless you complete the full KYC process.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">3. Customer will not be allowed to open Savings account through this journey if customer&rsquo;s Aadhaar address is in a non-serviceable location.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">4. Limited KYC account will be opened post serviceability check of the communication address given by the customer. In case the communication address provided by the customer is in a non-serviceable location, customer will not be allowed to continue the journey.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">5. Customer opening Limited KYC account gives consent to the Bank to fetch his/her demographic details from Unique Identification Authority of India (UIDAI), using biometric authentication which will be used for KYC purposes. The demographic details include name, DOB, gender, address and photograph. .&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">6. Customer authorizes KMBL to use his/her Aadhaar details and core biometric information to authenticate and verify his/her identity. Customer hereby gives his/her free consent to link his/her Aadhaar Number to all his/her existing bank accounts and customer profile for the purpose of availing the Banking Services for operations of account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">7. If the customer provides incorrect details regarding his account seeded with Aadhaar for receiving Direct Benefit Transfer, he/she understands and agrees that bank reserves the right to not seed his/her account for DBT. In these cases, Bank shall not be held liable for not seeding the account for DBT and any issue arising.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">8. The customer herewith agrees to complete his full KYC by visiting his nearest Kotak Bank branch/ by requesting a visit from the bank representative and providing his biometric details within 12 months of opening such account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">9. The Limited KYC account opening process is unavailable to customers whose address fetched from UIDAI is deemed incomplete by the Bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">10. The customer agrees that failure to complete full KYC within 12 months will lead to his account being closed by the bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">11. The customer agrees that if her/ his balance in the limited KYC account exceeds 1 Lakh in a given day or overall cumulative deposit exceeds 2 Lakhs in a F.Y., bank reserves the right to put the account on a total freeze, till such time that customer completes the full KYC process&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">12. In case of account being put under total freeze, the customer agrees that principal amount on such deposits kept along with the interest accrued (if any) will be payable to him only upon completing his full KYC.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">13. The customer will not be eligible to get a Cheque book till the customer completes the Full KYC of the account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">14. The customer agrees to the issuance of a Debit Card linked to Kotak Salary Savings Account which is enabled for Domestic usages by default. Customer understands that international usage of the card can be enabled by making request via Mobile Banking App.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">15. The customer agrees that he/she will not be able to get the following services from the bank till the customer completes the Full KYC:&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">a. Cash withdrawal at branch&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">b. FCY &ndash; DD&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">c. Cheque withdrawal&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">d. Investment account&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">e. TD/RD&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">f. TOD&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">g. Activ Money&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">h. Investment in IPO&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">16. The customer agrees that such an account will be subject to regular scrutiny and monitoring from the bank and bank shall reserve the right to completely freeze/debit freeze/ close the account at its sole discretion&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">17. If Customer fails to provide full KYC for any reason, customer understand and agree that the bank reserves right to close the account and customer will have to contact the branch withdrawing any leftover amount in his/her account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><span th:style=="font-size:15px;">Following Savings Bank rules are also be applicable for Limited KYC accounts opened through OTP based Aadhaar authentication&nbsp;</span></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">1. Interest rates on Savings Account have been de-regularized by RBI. The rate may vary from time to time and will be calculated on Daily Product basis on clear balance. The interest on savings accounts will be credited at quarterly intervals or as prescribed by Reserve Bank of India from time to time.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">2. The Savings Bank Account should be used to route transactions of only non-business/ noncommercial nature. In the event of occurrence of such transactions or any such transactions that may be construed as commercial/ business/ dubious or undesirable, the Bank reserves the right to unilaterally freeze operations in such accounts and/ or close the account. The number of permissible deposit and withdrawal transactions without any charges are available in GSFC.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">3. Computation of AMB / AQB is the summation of end of day balances for the period (month / quarter) / no. of days of the said period (month/quarter). Refer GSFC for details on Non - Maintenance charges.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">4. Relationship Value (RV) is a combination of the Average balance across all accounts maintained with the Bank and Investments in MF &amp; Insurance routed through the Bank.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">5. Nomination Facility is available for all types of individual deposit accounts.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">6. Cash Deposit facility is provided at both home &amp; non-home branches. Charges applicable on non-home branches cash deposit is available in GSFC. Cash can also be deposited in Cash Deposit Machines (wherever available)&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">7. SMS Banking and Alert Facility is available to all account holders for all products. Refer to GSFC for charges applicable.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">8. Bank extends passbook facility on Savings Bank Accounts. Bank provides monthly statement of customer Bank account free of cost on customer visiting the Branch personally. Quarterly physical statements will be issued by default to all Passbook Customers. Charges for issuance of Duplicate passbook /statement are available in GSFC. Duplicate passbook, if requested for, can be printed for the period as requested while issuing the passbook. There are no charges for printing the past entries in the duplicate passbook&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">9. In case of the Entity accepting / receiving any Foreign Contributions , customers need to comply to Foreign Exchange Management Act of 1999 (FEMA).&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">10. Customer should carefully examine the entries made in their Statement of Account/s/ Passbook and draw Bank&rsquo;s attention to any errors/omissions/ discrepancies that may be discovered within&nbsp; 30 days from the date of entries, failing which the same shall be deemed to be correct and accepted by the customer and the customer shall not be entitled to question the correctness/ accuracy thereof.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">11. Accounts which have not been operated over a period of one year and two years are termed as inoperative and dormant account respectively. Accounts which are not operated for Ten years will be marked as &ldquo;Unclaimed&rdquo;. A request for activation of account has to be made by the customer in writing by visiting our nearest branch with his original identity proof documents acceptable to the Bank. There are no charges on activation of such accounts.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">12. The request for Transfer of Account from one Branch to other can be submitted at any of the Branch. Charges with regards to Closure of Account are specified in GSFC. There are no charges for Transfer of Account between Branches.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">13. Charges for issuance of Cheque book &amp; Cheque Return charges are available in GSFC.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">15. Registration of Standing Instructions / Direct Debits can be done by giving a request at any Branch. Charges as specified in GSFC will be levied for non-execution of Standing Instructions / Direct Debits.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">16. Satisfactory Conduct of the account entails maintaining stipulated average balance (wherever applicable) and there are no Cheque / standing instruction bounces. If there are high incidences to the contrary, the Bank reserves the right to close the Account under intimation to the customer. Any non-maintenance of stipulated minimum balance will attract service charge as per Bank&rsquo;s journal schedule of Features and Charges which are available with our Branches and on the Bank&rsquo;s website www.kotak.com&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">17. The Bank reserves its right to close any account which is not operated satisfactorily/dormant with prior notice.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">18. The customer needs to intimate Bank in writing of any change in the contact details/address. Customer needs to submit documentary proof wherever applicable.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">19. The age considered for minor is below 18 years and for senior citizen as 60 years and above.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">20. The Bank may disclose information about customer&rsquo;s account if required or permitted by any law/rule or regulations or at the request of any public or regulatory authority or if such disclosure is required for the purposes of preventing fraud without any specific consent of the customer.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">21. Copies of Citizens Charter, BCSBI Code, Customer Education Brochure, General Terms and Conditions which govern the conduct of Savings Bank Account are available in the Branch and on the website www.kotak.com. For any information or changes in Bank&rsquo;s Policies, interest rates, service charges, etc., applicable to your account, refer to notices displayed in the customer area of the Branch.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">22. The Bank will give a prior intimation of 30 days for any change in T&amp;Cs / increase in fees &amp; charges.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">23. Mere deposit of an amount for opening an account does not mean that the Bank has opened the Account. The account opening cannot be deemed to come into existence until the Bank gives the intending customer a Welcome Kit containing Account Number, Cheque Book, Debit Card etc. the Bank reserves the right to make any changes, alterations, cancellations in the above rules at any time without notice. Any person opening the account shall be bound by the rules governing the account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">24. Bank Deposits up to Rs.5,00,000 in respect of each depositor are fully protected by the Deposit Insurance and Credit Guarantee Corporation under the deposit Insurance Scheme.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">25. The Bank reserves the right to make any changes, alterations, cancellations, in the above rules at any time without notice. Any person opening the account shall be bound by the rules governing the account.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-bottom:8.0pt;text-align:justify;line-height:107%;'><strong><u><span th:style=='font-family:"Calibri",sans-serif;color:black;'>SILK Terms and Condition applicable if SILK promo selected</span></u></strong></p>
+<ol style="list-style-type: decimal;margin-left:-0.25in;text-align: left">
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>1. Charges on Silk Platinum Debit Card applicable as per account variant held with the bank.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>2. Silk Programme privileges are subject to maintenance of requisite average monthly balances in the SILK Saving account. Rewards are subject to spends made on Debit Card. Spends should be on domestic &amp; international merchant transactions done on Silk Platinum Debit Card.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>3. Rewards for a particular calendar month are processed and communicated to all qualifying customers in the subsequent month.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>4. ATM cash withdrawals are not eligible for Rewards points.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>5. Silk Programme related communication are sent to the registered e-mail and/or mobile no. of Sole/Primary account holder maintained with the Bank and it will be the responsibility of the customer/account holder to have a valid e-mail id &amp; mobile number updated with the bank at all times, failing which, customer may not receive important account related information and Bank shall not be responsible for such failure on part of customer. Customers with mobile numbers / e-mail id registered for DNC / NDNC will not receive SMS confirmation from us unless a specific consent has been provided to the Bank.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>6. In the event of non-receipt of Reward points credit confirmation within the subsequent month from the last day of qualifying month, customers to contact their relationship manager/branch/customer service helpline within 50 days from the date of qualifying for the rewards. Any claims of non-receipt of the rewards beyond the stipulated period shall not be entertained.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>7. The Bank shall not be liable for any loss or damage arising or resulting from delay in transmission delivery or non-delivery of electronic messages or any mistake, omission, or error in transmission or delivery thereof or in deciphering the message owing to any reason beyond the control of the Bank. The Bank will on a best-effort basis to send the Reward point confirmation in the specified duration as above and shall not be responsible for any delay or non-receipt of the same due to any technical reason.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>8. The Bank also reserves the right with / without notice to terminate or alter this offer and terms and conditions or modify existing process of redemption / introduce any additional process at any time without assigning any reason whatsoever. The decision of the Bank with respect to this Offer shall be final and binding. All disputes arising out of or in connection with this Offer shall be subject to the jurisdiction of courts at Mumbai.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>9. Lockers are subject to availability. Discount applicable for locker allotment in the financial year of enrolling for Silk.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>10. A customer can open maximum of one Silk account in her name. Silk Programme can be given only to woman customer who is a resident Indian individual above 18 years of age and is a primary account holder. I hereby give consent to Bank to share the information, if required about my account/s with the Bank with its group companies and vendors.</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>11. I agree to upgrade my debit card to Silk Platinum Debit Card and hereby confirm that my communication address is as per the bank records. In case of update in correspondence, log in to Kotak Net Banking, select profile, update contact details and click on edit correspondence details</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>12. TD eligibility Criteria to avail NMC Waiver w.e.f 1st June 2023: -</span></li>
+  </ol>
+<p th:style=='margin-top:.3pt;margin-right:0in;margin-bottom:.0001pt;margin-left:.25in;text-indent:0in;font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<p th:style=='margin-top:.3pt;margin-right:0in;margin-bottom:.0001pt;margin-left:.25in;text-indent:0in;font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>The required criteria for Term Deposit (TD) will be as per the Savings product variant (detailed in grid below)</span></p>
+<p th:style=='margin-top:.3pt;margin-right:0in;margin-bottom:0in;margin-left:38.9pt;text-indent:-15.8pt;font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<table style="border: none;width:496.25pt;margin-left:22.0pt;border-collapse:collapse;">
+    <tbody>
+        <tr>
+            <td rowspan="2" style="width:105.1pt;border:solid windowtext 1.0pt;border-bottom:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Savings Product Balance Requirement&nbsp;</span></strong></p>
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>(for Silk programme customers only)</span></strong></p>
+            </td>
+            <td rowspan="2" style="width:108.45pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Existing balance requirement in Savings (Rs)</span></strong></p>
+            </td>
+            <td colspan="2" style="width:282.7pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Balance criteria (one of the below)</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Savings AMB Requirement (Rs)</span></strong></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Term Deposit Value (Rs)</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:105.1pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Nova</span></p>
+            </td>
+            <td style="width:108.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>5,000</span></p>
+            </td>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>5,000</span></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>25,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:105.1pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Edge</span></p>
+            </td>
+            <td style="width:108.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>10,000</span></p>
+            </td>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>10,000</span></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>50,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:105.1pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Classic</span></p>
+            </td>
+            <td style="width:108.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>10,000</span></p>
+            </td>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>10,000</span></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>50,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:105.1pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Pro</span></p>
+            </td>
+            <td style="width:108.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>20,000</span></p>
+            </td>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>20,000</span></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>100,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:105.1pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Ace</span></p>
+            </td>
+            <td style="width:108.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>50,000</span></p>
+            </td>
+            <td style="width:152.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>50,000</span></p>
+            </td>
+            <td style="width:130.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:9.65pt;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:23.1pt;text-align:justify;line-height:  116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>250,000</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p th:style=='margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:.75in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;line-height:116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>&nbsp;</span></p>
+<ul style="list-style-type: disc;text-align: left;">
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>TD tenor has to be greater than or equal 6 months. Term Deposit includes, Fixed deposit and recurring deposits</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>The primary holder of the Savings and Term Deposit relationship has to be same.</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Promo Code - WOMANCB will only be eligible</span></li>
+</ul>
+<p th:style=='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.25in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><u><span th:style=='font-family:"Calibri",sans-serif;color:black;'><span th:style=="text-decoration:none;">&nbsp;</span></span></u></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-right:2.2pt;text-align:justify;line-height:101%;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><strong><u><span th:style=='font-family:"Calibri",sans-serif;color:black;'>GRAND Terms and Condition applicable if GRAND promo selected</span></u></strong></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<ol style="list-style-type: decimal;margin-left:16.25px;text-align: left;">
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Any person who is 55 years or above and is Indian resident is eligible to avail benefits under Grand Savings Programme. The benefits/offers under this programme can only be availed by the Primary Account Holder.</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>Grand Programme privileges are subject to maintenance of requisite average monthly balances in the Grand Saving account. Rewards are subject to spends made on Debit Card. Spends should be on domestic &amp; international merchant transactions done on Kotak Debit Card.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>Rewards for a particular calendar month are processed and communicated to all qualifying customers in the subsequent month.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>ATM cash withdrawals are not eligible for Rewards points.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>Grand Programme related communication are sent to the registered e-mail and/or mobile no. of Sole/Primary account holder maintained with the Bank and it will be the responsibility of the customer/account holder to have a valid e-mail id &amp; mobile number updated with the bank at all times, failing which, customer may not receive important account related information and Bank shall not be responsible for such failure on part of customer. Customers with mobile numbers / e-mail id registered for DNC / NDNC will not receive SMS confirmation from us unless a specific consent has been provided to the Bank.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>In the event of non-receipt of Reward points credit confirmation within the subsequent month from the last day of qualifying month, customers to contact their relationship manager/branch/customer service helpline within 50 days from the date of qualifying for the rewards. Any claims of non-receipt of the rewards beyond the stipulated period shall not be entertained.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>The Bank shall not be liable for any loss or damage arising or resulting from delay in transmission delivery or non-delivery of electronic messages or any mistake, omission, or error in transmission or delivery thereof or in deciphering the message owing to any reason beyond the control of the Bank. The Bank will on a best-effort basis to send the Reward point confirmation in the specified duration as above and shall not be responsible for any delay or non-receipt of the same due to any technical reason.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;'>The Bank also reserves the right with / without notice to terminate or alter this offer and terms and conditions or modify existing process of redemption / introduce any additional process at any time without assigning any reason whatsoever. The decision of the Bank with respect to this Offer shall be final and binding. All disputes arising out of or in connection with this Offer shall be subject to the jurisdiction of courts at Mumbai.&nbsp;</span></li>
+    <li style='margin:0in;font-size:15px;font-family:"Times New Roman",serif;color:black;margin-bottom:3.75pt;text-align:justify;line-height:15.0pt;'><span th:style=='font-family:"Calibri",sans-serif;color:windowtext;'>Lockers are subject to availability. Discount applicable for locker allotment in the financial year of enrolling for Grand</span></li>
+    <li style='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Home Banking (HB) services</span></strong><span th:style=='font-family:"Calibri",sans-serif;color:black;'>&nbsp;will start within a month from the date of A/C opening. The date selected for HB can be changed with 30 days prior intimation. Once it is changed, in subsequent months cash delivery by Bank would happen on that date. If on the specified date of HB, due to holiday/Sunday/ or any other reason, Bank is unable to execute the transaction, the cash shall be delivered on the next working day. These services are provided on a No Warranty or Risk basis, therefore the Bank shall have no liability to the customer or any other parties for any indirect, incidental, punitive or consequential costs, damages or otherwise with respect to the Bank offering these services and the Bank shall not be liable or responsible on account of any misuse of the services and the Bank stands indemnified in this regard. The Bank on a best-effort basis will execute the HB transaction within the specified duration as mentioned above, and shall not be responsible for delay or non-delivery on the specified date. This facility is provided once a month and in HB active locations. The charges applicable will be as per standard GSFC and basis the account type. Wherever HB is not available, the customized cash delivery option will be HBNA by default. The Bank also reserves the right with / without notice to extend or terminate the above offers or alter the terms and conditions or modify existing offer or introduce any additional process at any time without assigning any reason whatsoever. The decision of the Bank with respect to this Offer shall be final and binding.</span></li>
+   
+
+        <li style='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><span th:style=='font-family:"Calibri",sans-serif;'>TD eligibility Criteria to avail NMC Waiver w.e.f 1st June 2023</span></li>
+    </ol>
+<p th:style=='margin-top:5.4pt;margin-right:5.15pt;margin-bottom:.0001pt;margin-left:.75in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;line-height:116%;'><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>The required criteria for Term Deposit (TD) will be as per the Savings product variant (detailed in grid below)</span></p>
+<p th:style=='margin-top:6.6pt;margin-right:19.65pt;margin-bottom:.0001pt;margin-left:.5in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;line-height:83%;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></strong></p>
+<table style="width: 4.2e+2pt;margin-left:45.75pt;border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td rowspan="2" style="width: 116.75pt;border: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>Savings Product Balance Requirement&nbsp;</span></strong></p>
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>(Grand programme customers only)</span></strong></p>
+            </td>
+            <td rowspan="2" style="width: 1in;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>Existing balance requirement in Savings (Rs)</span></strong></p>
+            </td>
+            <td colspan="2" style="width: 231.7pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>Balance criteria (one of the below)</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>Savings AMB Requirement (Rs)</span></strong></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>Term Deposit Value (Rs)</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 116.75pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Nova</span></p>
+            </td>
+            <td style="width: 1in;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>5,000</span></p>
+            </td>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>5,000</span></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>25,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 116.75pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Edge</span></p>
+            </td>
+            <td style="width: 1in;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>10,000</span></p>
+            </td>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>10,000</span></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>50,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 116.75pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Classic</span></p>
+            </td>
+            <td style="width: 1in;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>10,000</span></p>
+            </td>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>10,000</span></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>50,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 116.75pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Pro</span></p>
+            </td>
+            <td style="width: 1in;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>20,000</span></p>
+            </td>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>20,000</span></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>100,000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 116.75pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Ace</span></p>
+            </td>
+            <td style="width: 1in;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>50,000</span></p>
+            </td>
+            <td style="width: 121.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>50,000</span></p>
+            </td>
+            <td style="width: 110.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 6pt;vertical-align: top;">
+                <p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>250,000</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>&nbsp;</span></p>
+<ul style="list-style-type: disc;text-align: left;">
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>TD tenor has to be greater than or equal 6 months. Term Deposit includes, Fixed deposit and recurring deposits</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>The primary holder of the Savings and Term Deposit relationship has to be same.</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:#231F20;'>Promo Code - GRANDCB will only be eligible</span></li>
+</ul>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-left:26.25pt;text-align:justify;line-height:15.0pt;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;line-height:15.0pt;'><span th:style=='font-family:"Calibri",sans-serif;color:black;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><strong><u><span th:style=='font-family:"Calibri",sans-serif;color:black;'>PRIVY LEAGUE PROGRAMME&nbsp;</span></u></strong></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<ul style="list-style-type: disc;text-align: left;">
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>If a customer opts to be a part of Privy League Programme, customer&rsquo;s acceptance on Privy Consent to be taken</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Entry to the said programme is by invitation and at the sole discretion of the bank. Meeting the programme eligibility criteria is not an implicit invitation to the programme.&nbsp;</span></li>
+    <li><span th:style=="font-size:11.0pt;">The benefits of the programme are applicable till the time the customer is a part of the programme. Kotak Mahindra Bank reserves the right to withdraw the membership to the program after due intimation to the client. In the event of withdrawal of programme entitlement, service charges shall be applicable as per the product variant held at that time point.</span></li>
+     <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>If the balances required as per Programme eligibility are not maintained which is subject to review every 6 months on an ongoing basis (or for any other reason as deemed fit by the Bank), the Bank reserves the right to withdraw the prevailing Programme Features, with prior intimation. In case of such withdrawal of prevailing Programme entitlement, all the existing Programme Features (e.g. discounts, services etc.) will be withdrawn and instead the minimum balance requirements, fees &amp; charges will be applicable as per the standalone Product / Account variant/s held by the Account Holder(s)</span></li>
+    </ul>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><strong><em><span th:style=='font-size:13px;font-family:"Century Gothic",sans-serif;'>&nbsp;</span></em></strong></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-family:"Calibri",sans-serif;color:black;'>ActivMoney</span></strong></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>ActivMoney facility (Sweep in/Sweep out limit of Rs.25,000) shall be offered by default to customers holding Edge Account with Kotak PVR debit card under SBPVR scheme only. </span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>Annual Debit Card charges for Kotak PVR Debit Card are Rs 499+GST. This card is a Platinum variant with free movie benefits and free cash withdrawals. </span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><u><span th:style=='font-family:"Calibri",sans-serif;color:black;'>Default Limits for ActivMoney: -</span></u></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><u><span th:style=='font-family:"Calibri",sans-serif;'><span th:style=="text-decoration:none;">&nbsp;</span></span></u></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;olor:black;'>Savings Accounts: -</span></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+<table style="border: none;border-collapse:collapse;width:100%;">
+    <tbody>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.75pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Scheme code</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.75pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Product Name</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.75pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Sweep In Amount</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.75pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Sweep out Amount</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBACE (with Privy)</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK ACE SAVINGS ACCOUNT &ndash; With Privy League</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>300000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>300000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBACE</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK ACE SAVINGS ACCOUNT &ndash; Non-Privy</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBCLC</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK CLASSIC SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBEDG</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK EDGE SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBNOV</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK NOVA SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBPRO</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK PRO SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBSNM</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK SANKALP SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBEDA</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK EVERYDAY SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>50000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBSYN</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SYNERGY SAVINGS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBSPJ</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SPECIAL PROJECTS ACCOUNT</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SBPVR</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>KOTAK EDGE SAVINGS ACCOUNT - WITH PVR REWARDS (ActivMoney by Default)</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;height: 15.75pt;vertical-align: top;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Corporate Salary Accounts: -</span></p>
+<table style="border: none;border-collapse:collapse;width:100%;">
+    <tbody>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Scheme code</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Product Name</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Sweep In Amount</span></strong></p>
+            </td>
+            <td style="border:solid windowtext 1.0pt;border-left:none;padding:  0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><strong><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>Sweep out Amount</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSACE</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CORPORATE ACE SALARY ACCOUNT &ndash; With Privy League&nbsp;</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>300000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>300000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSEDG</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CORPORATE EDGE SALARY ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSPLT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CORPORATE PLATINA SALARY ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSNEO</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CORPORATE SALARY NEO ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>GSACE</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>GROUP STAFF ACE ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>GSEDG</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>GROUP STAFF EDGE ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSUNI</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>UNI ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSGDP</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>PUBLIC SERVICES ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>STACE</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>STAFF ACE ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>STEDG</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>STAFF EDGE ACCOUNT</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSPRO</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>EVERYDAY ACCOUNT &ndash; CORPROATE SALARY</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>CSUFS</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>SALARY ACCOUNT FOR UNIFORMED SERVICES</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+            <td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt;">
+                <p th:style=='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span th:style=='font-size:15px;font-family:"Calibri",sans-serif;color:black;'>25000</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-bottom:8.0pt;text-align:justify;line-height:107%;'><strong><span th:style=='font-family:"Calibri",sans-serif;'>&nbsp;</span></strong></p>
+<p th:style=='margin:0in;font-size:15px;font-family:"Times New Roman",serif;margin-bottom:8.0pt;text-align:justify;line-height:107%;'><strong><u><span th:style=='font-family:"Calibri",sans-serif;'>CUSTOMER DECLARATIONS</span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><u><span th:style=="font-size:15px;"><span th:style=="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><u><span th:style=="font-size:15px;">FATCA&nbsp;</span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">
+Customer declared that he/she is a resident of India by birth and does not hold citizenship of any other country (dual/multiple/green card). Customer confirmed that he/she is not a tax resident of any other country other than India or a POA mandate holder and customer does not have any address / telephone number outside India.</p>
+
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">Any inaccurate, incomplete or false disclosure of statement of financial transaction or reportable account by me would lead to penal consequence on the Bank under applicable law. </p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">The Bank shall be entitled to recover from me such amount levied due to such inaccuracy, incompleteness or false disclosure. </p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">I will indemnify the Bank in respect of all or any liabilities incurred by Bank, by reason of any of the information or particulars given by me, being incorrect or false or being suppressed or omitted.</p>
+
+
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><u><span th:style=="font-size:15px;"><span th:style=="text-decoration:none;">&nbsp;</span></span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><u><span th:style=="font-size:15px;">CUSTOMER DECLARATION FOR SAVINGS ACCOUNT&nbsp;</span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">1. The particulars contained herein shall be valid for all accounts held by me/ us or to be opened by me/ us hereafter either singly or with other(s) and / or by me/ us in any representative capacity with the Bank unless informed otherwise. I / We have obtained, read, understood and agreed the Terms &amp; Conditions governing the opening of an account with Kotak Mahindra Bank Ltd. (the Bank), and those relating to various Services including but not limited to a) ATM b) Phone Banking c) Credit Card d) Net Banking e) Payment Gateway f) Kotak Bill Pay g) SMS Banking h) Alert Service i) Fixed Deposits / Recurring Deposits, available at Bank?s website www.kotak.com.. I/ We understand and agree that Payment Gateway will be activated by default for the customers registered for Net Banking with unconditional transaction rights. I/ We understand and agree that Net Banking, Phone Banking access, if applied for, is applicable to all Deposit accounts, existing or to be opened in future. I/ We understand and agree that existing / future accounts will be linked by default to Debit Card/ Payment Gateway and for delinking Debit Card/ Payment Gateway from the account I/ We have to visit the nearest branch to place the request. I/ We agree to be bound by the said Terms and Conditions including those excluding/ limiting the Bank liability. I/ We understand that the Bank may at its absolute discretion, suspend any of the Services completely or partially without any notice to me/ us. I/ We agree that the Bank may debit my/ our account for service charges as applicable from time to time. I/ We hereby agree, declare and confirm that the funds routed by me/ us in my/ our account will be from my/ our own source of funds acquired legitimately and such funds are acquired not in contravention of any applicable laws or rules in force, enacted / issued by Statutory or Regulatory Authority from time to time or funds so routed have not been or acquired by way of evasion of government levies/ taxes. I/ We shall advise the Bank immediately in the manner as agreed by me/ us and acceptable to the Bank, in case of any change in the above details an information given by me/ us. I/ We do hereby authorize the Bank to conduct my/our credit history verification with CIBIL or any other Credit Rating Agency.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;margin-bottom:2.45pt;text-align:justify;'><span th:style=="font-size:15px;">2. <strong>Statement of Account:&nbsp;</strong>I/ We am/are aware that the Bank will forward statements by way of email on monthly basis to my/ our registered email ID. I/ We agree that Bank would be deemed to have delivered the statement to me/ us, on Bank sending the email containing the statement as an attachment to me/ our registered email id. In case email has not been provided by me/ us, physical statement at quarterly intervals would be sent to my/ our mailing address. I/ We am/are also aware that if I/ We have provided my/our email id but still wish to opt for physical statement at quarterly intervals, I/ We need to provide a specific request for the same. Any person resident in India collecting and effecting/ remitting payment directly/ indirectly outside India in any form towards overseas foreign exchange trading through electronically/ Internet trading portals would make himself/ herself/ themselves liable to proceeded against with for contravention of Foreign Exchange Management Act (FEMA), 1999 besides being liable for violation for regulations relating to Know Your Customer (KYC) Norms/ Anti Money Laundering (AML) Standards.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;margin-bottom:2.45pt;text-align:justify;'><span th:style=="font-size:15px;">3. I authorize the bank to share my transaction details with regulatory/ Enforcement Authorities whenever such information is called for. I authorize the branch official to update the document details in the bank records as per copies of documents submitted by me. I hereby consent to receiving information from Central KYC Registry through SMS/ Email on the above registered number/ email address. I understand that as per directions of government of India, my KYC information will be updated in Central KYC registry.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;margin-bottom:2.45pt;text-align:justify;'><span th:style=="font-size:15px;">4. <strong>SMS Banking &amp; Alert Facility:&nbsp;</strong>I understand that alert facility enables me to receive alerts on my email ID and/ or mobile number regarding account transactions and maintenances. I further understand that new alerts maybe added from time to time. I am aware that alerts that have been mandated by RBI and such alerts as deemed appropriate by the Bank will be sent even if I have not subscribed for the facility.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;margin-bottom:2.45pt;text-align:justify;'><span th:style=="font-size:15px;">5. Customer voluntarily agrees to use his/her Aadhaar details for opening AADHAAR based biometric savings account. Customer agrees and hereby authorize Bank to fetch their personal details from UIDAI. Customer authorizes Bank to use his/her Aadhaar details and core biometric information to authenticate and verify his/her identity.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;margin-bottom:2.45pt;text-align:justify;'><span th:style=="font-size:15px;">6. I have updated the Nominee details and I authorize the bank to update the same in their records as Form DA1, which will be binding on me, including my heirs, legal representatives, successors and executors. I hereby authorize the bank to send the copy of the said Form DA1 to me through email id provided by me to the bank for communication purpose and I hereby confirm and agree to that bank shall not be responsible for any misuse of information sent through email.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">7. <strong>Other Banking Products:&nbsp;</strong>Customer agrees and authorizes Bank to share his/her contact details with the respective bank team/department for communication purpose in case Customer wishes to avail other banking facilities at the time of account opening.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><span th:style=="font-size:15px;">8. The customer herewith agrees to be contacted by the bank to receive information in respect of account maintenance, alerts, payments due, updates on existing and new products, servicing of account for sales, marketing or servicing their relationship with KMBL, its group companies/associates or agents through Telephone/Mobile/SMS/Email etc. Further he/she understands that the consent to receive calls/communications shall be valid and shall prevail over their current or any subsequent registration of their mobile number for NDNC and shall continue to be treated as customer consent/acceptance.&nbsp;</span></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><span th:style=="font-size:15px;">&nbsp;</span></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;text-indent:9.0pt;'><strong><u><span th:style=="font-size:15px;">CUSTOMER DECLARATION FOR SALARY ACCOUNT&nbsp;</span></u></strong></p>
+<p th:style=='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;color:black;text-align:justify;'><strong><span th:style=="font-size:15px;">&nbsp;</span></strong></p>
+<ul style="list-style-type: disc;margin-left:0in;text-align: left;">
+    <li><span th:style=="font-family:Calibri;">I hereby declare that the above shared information is true and correct to the best of my knowledge. I further agree that any false / misleading information given by me or suppression of any material fact will result in withholding declining of the transaction of the Bank.</span></li>
+    <li><span th:style=="font-family:Calibri;">I agree that the bank official has explained to me the terms and conditions applicable, details of features and charges as per bank&apos;s general schedule of features and charges (GSFC) and average quarterly/monthly balance requirement as applicable to the product subscribed by me and I have agreed to the same.</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>I understand that I will be bound and have to abide by Savings Bank Account rules available on the bank&apos;s website www.kotak.com.&nbsp;</span></li>
+    <li><span th:style=='font-family:"Calibri",sans-serif;color:black;'>I understand that the Bank reserves the right to revise its service charges as laid down in the GFSC and I also understand that said charges are available on http://www.kotak.com</span><span th:style=='font-family:"Calibri",sans-serif;'>.</span></li>
+    <li><span th:style=="font-family:Calibri;">I understand and agree that the Salary Savings Account should be used to route transactions of only non-business/non-commercial nature. In the event of occurrence of such transactions that may be constructed as commercial/suspicious in nature, the Bank reserves the right to decline/reverse such transactions and freeze/close the Salary Savings Account.&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">The number of permissible deposit and withdrawal transactions without any charges are available in GSFC. I have given consent for the Promo/Program Declaration and read all the terms and conditions of Promo/Program including applicable AQB/AMB, which I understand is valid till the Promo / Program is active.&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">I give my consent to receive information with respect to account maintenance, alerts, payments due, and updates on existing and new products, servicing of account for sales, marketing or servicing my relationship with KMBL, its group companies/associates or agents through Telephone/Mobile/SMS/Email etc.&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">Further, I understand that my consent to receive calls /communications shall be valid and shall prevail over my current or any subsequent registration of my number for NDNC and shall continue to be treated as my consent/acceptance.&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">If salary or pension is not credited for a period of 3 months into my Salary Account, the account will be automatically converted to a Savings account after due prior notice or intimation (charges &amp; fees of Savings account variant in which the salary account shall migrate will be applicable)&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">I understand that I am eligible for Cr&egrave;me Premium Banking proposition benefits as I am employed at Cr&egrave;me Corporate. Kotak Cr&egrave;me benefits are only applicable for Cr&egrave;me employees. I will continue to enjoy the benefits of Kotak Cr&egrave;me proposition as long as I am working in Cr&egrave;me Corporate and salary is being credited in my Salary Account or required balance is maintained.&nbsp;</span></li>
+    <li><span th:style=="font-family:Calibri;">Cr&egrave;me proposition is applicable for select Corporates based on sole discretion of Kotak Mahindra Bank.</span></li>
+    <li><span th:style=="font-family:Calibri;">I/We understand that to serve me/us better, I/We agree to share, if required, details about my/our account/s and select personal information with the Bank, its group companies and vendors.</span></li>
+    <li><span th:style=="font-family:Calibri;">Protection Benefit is available only to Cr&egrave;me Plus Corporates. T&C Apply.</span></li>
+    <li><span th:style=="font-family:Calibri;">I/We understand that to avail the protection benefits available on my Salary account under Crème Plus proposition, I/We agree to share details about my/our account/s and required personal information with the Kotak Bank and its group companies (like Kotak General Insurance for KGHA) and vendors.</span></li>
+</ul>
+                    </div>                   
+                    
+                    <div class="text-center action_blk">
+                        <button class="btn btn-primary errorNextClickd">
+                            OKAY
+                        </button>
+                    </div>
+                </div>
+            </div>
+      </div>
+      </div>
+     
+    
+     <!--/*<footer>*/-->
+    <!--js file  start -->
+    <script src="<s:url value='/xpress/assets/js/jquery-3.7.0.min.js' />"></script>
+	<script src="<s:url value='/xpress/assets/js/jquery-ui.min.js' />"></script>
+    <!--js file  end -->
+    <script src="<th:href="@{/xpress/assets/js/popper.min.js}" />"></script>
+    <script src="<th:href="@{/xpress/assets/js/bootstrap.min.js}" />"></script>
+    <!-- the mousewheel plugin -->
+    <script type="text/javascript" src="<th:href="@{/xpress/assets/js/jquery.mousewheel.js}" />"></script>
+    <!-- the jScrollPane script -->
+    <script src="<th:href="@{/xpress/assets/js/jquery.jscrollpane.min.js}"/>"></script>
+    <script src="<th:href="@{/xpress/assets/js/script.js}" />"></script>
+    <script src="<th:href="@{/xpress/assets/js/lottie.min.js}" />"></script>
+	<script src="https://assets.adobedtm.com/7a6d0b1a3787/280dce85a1d6/launch-7cfc31d19398-development.min.js" async></script>
+    <script>
+        
+		
+		var digitalData={};
+		if($('#errorText').text().trim() != '')
+  	  {
+			digitalData={
+					pageName:"sa/express/contact details",
+					channel: "SA Express",
+					error:	$('#errorText').text()//please pass the error message when error occur with other key value pairs
+					};
+  	  }else{
+  		  digitalData={
+  				pageName:"sa/express/contact details",
+  				channel: "SA Express",
+  					//error:	"<s:property value='globalErrMsg' />"//please pass the error message when error occur with other key value pairs
+  					};
+  	  }  
+    </script>
+    <!-- custom js -->
+    <script>
+        
+        $(function () {
+          $(".showShareYourIdentity").on("click", function () {
+            var name = nameValidate($("#userName"));
+            var mob = mobilenumValidate($("#mobileNumber"));
+            var email = emailValidate($("#email"));
+            var pincode = pincodeValidate($("#pincode"));
+            //alert(name);
+            if (name && mob && email && pincode) {
+            	
+            	$(".could_not_connect_to_Aadhaar").addClass("open");
+	            $(".aadhaarConsentAgreement_blk").addClass("blur");
+            	
+            	
+            	
+            	/* $(".showShareYourIdentity").attr("disabled", true);
+            	$("#showShareYourIdentity").submit(); */ 
+            }
+          });
+        });
+        
+        $('.errorNextClickd').on("click", function (e) {
+        	$(".showShareYourIdentity").attr("disabled", true);
+        	$("#showShareYourIdentity").submit();
+        });
+        
+        
+        
+        function nameValidate(el) {
+          var nameValue = el.val();
+          var filter = /^[a-zA-Z_\s]{2,}$/g;
+
+          if (filter.test(nameValue)) {
+            if (nameValue.length > 2) {
+              var validate = true;
+              el.siblings(".invalid-feedback").hide();
+              el.removeClass("invalid");
+            } else {
+              console.log(`nameValue`, el);
+              el.siblings(".invalid-feedback").show();
+              el.addClass("invalid");
+              var validate = false;
+            }
+          } else {
+            el.siblings(".invalid-feedback").show();
+            el.addClass("invalid");
+            var validate = false;
+          }
+          return validate;
+          if (validate) {
+            //name without special charachters
+          }
+        }
+        function mobilenumValidate(el) {
+          var phoneNumber = el.val();
+          var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+
+          if (filter.test(phoneNumber)) {
+            if (phoneNumber.length == 10) {
+              var validate = true;
+              el.siblings(".invalid-feedback").hide();
+              el.removeClass("invalid");
+            } else {
+              console.log(`phoneNumber`, el);
+              el.siblings(".invalid-feedback").show();
+              el.addClass("invalid");
+              var validate = false;
+            }
+          } else {
+            el.siblings(".invalid-feedback").show();
+            el.addClass("invalid");
+            var validate = false;
+          }
+          return validate;
+          if (validate) {
+            //number is equal to 10 digit or number is not string
+          }
+        }
+        function emailValidate(el) {
+          // console.log(`el`, el);
+          var email = el.val();
+          var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          // console.log(`email`, email.length);
+          if (filter.test(email)) {
+            var validate = true;
+            el.siblings(".invalid-feedback").hide();
+            el.removeClass("invalid");
+          } else {
+            el.siblings(".invalid-feedback").show();
+            el.addClass("invalid");
+            var validate = false;
+          }
+          return validate;
+          if (validate) {
+            //number is equal to 10 digit or number is not string
+          }
+        }
+        function numberOnly(evt) {
+          var theEvent = evt || window.event;
+
+          // Handle paste
+          if (theEvent.type === "paste") {
+            key = event.clipboardData.getData("text/plain");
+          } else {
+            // Handle key press
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+          }
+          var regex = /[0-9]|\./;
+          if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+          }
+        }
+        function pincodeValidate(el) {
+          var pincodeValue = el.val();
+          var filter = /^\d{6}$/g;
+
+          if (filter.test(pincodeValue)) {
+            if (pincodeValue.length == 6) {
+              var validate = true;
+              el.siblings(".invalid-feedback").hide();
+              el.removeClass("invalid");
+            } else {
+              console.log(`pincodeValue`, el);
+              el.siblings(".invalid-feedback").show();
+              el.addClass("invalid");
+              var validate = false;
+            }
+          } else {
+            el.siblings(".invalid-feedback").show();
+            el.addClass("invalid");
+            var validate = false;
+          }
+          return validate;
+          if (validate) {
+            //name without special charachters
+          }
+        }
+        
+        $(document).ready(function(){
+      	 	if($('#errorText').text().trim() != '')
+	    	  {
+	    		  $("#errorLabel").css("display", "block");
+	    	  }else{
+	    		  $("#errorLabel").css("display", "none");
+	    	  }
+      	  
+        });
+        
+        $(document).ready(function() {
+        	//tagOnload();
+        	 $(function() {
+               $("#email").autocomplete({
+                source : function(request, response) {
+        			if(split(request.term)[1].length >0){
+                        $.ajax({
+                                url : "<s:url value='xpress-email-domain-suggestion.action'/>",
+                                minLength: 1,
+                                type : "POST",
+                                data : {
+        							
+        								 term : split(request.term)[1]
+                                },
+                                dataType : "json",
+                                success : function(jsonResponse) {
+                                        response(jsonResponse);
+                                }
+                        });
+        			}
+                       },
+        				select: function( event, ui ) {
+        				this.value = split($("#email").val())[0]+"@"+ui.item.value;
+                  return false;
+        			},
+        			focus:function(event, ui){
+        				event.preventDefault();				
+        				event.stopPropagation();
+        			}
+                });
+        	 });
+			 });
+			 function split(val) {
+	return val.split("@");
+	}
+	
+	function loadgtm(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+		  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+		  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+		  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+		  };
+		  
+		  function callValidationScript(error){
+              
+			  digitalData={
+			  pageName:"sa/express/contact details",
+				channel: "SA Express",
+				error:	error
+			  };
+			   _satellite.track("SA-Load");
+		  }
+		  
+		  function calladobeScript(){
+			                                                                    
+			   _satellite.track("SA-Load");
+		  }
+    </script>
+    
+    <script type="text/javascript">
+			function callFunction(){
+			//loadgtm(window,document,'script','dataLayer','GTM-W49VCMV');
+			calladobeScript();
+				}
+		
+		function callAdobeOncblur(evt){
+				digitalData={
+				formName:"contact details form",
+				linkPageName:"sa/express/contact details",
+				stepName:evt
+				};       
+				
+				  _satellite.track("SA-Form-Tracking");
+		}
+		function callAdobeOnclick(){
+			digitalData={
+					linkName:"resume application",
+					linkPageName:"sa/express/introduction"  
+					 };                                              
+					_satellite.track("SA-Click");
+		}
+		function saveFeaturedSaving(){
+			callAdobeOnclick();
+			window.location.href = "returning-mobile.action?<s:property value='restartQueryString' escape='false'/>";
+            return false;
+		}
+		
+        </script> 
+    <!-- custom js end -->
+</body>
+
+</html>

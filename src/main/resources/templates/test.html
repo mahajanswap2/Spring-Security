@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset= "ISO-8859-1">
+ <title>Registartion</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+  .navbar {
+    background-color: rgb(64, 0, 64);
+  }
+  body {
+    font-family: Calibri, Arial, sans-serif
+  }
+</style>
+</head>
+<body>
+	
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+	  <div class="navbar-header">
+		  <button typ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+			  <sapn class="icon-bar"></sapn>
+			  <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#" th:href="@{/}">Spring Security Module</a>
+	  </div>
+  </div>
+</nav>  
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div th:if="${param.success}">
+				<div class="alert alert-info">you have succefully to you swn app!</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1>1</h1>
+<div class="container">
+<form th:action="@{/registartion}" method="post" th:object="${user}">
+	
+	<div class="form-group">
+		
+		<label class="control-lable" for="firstName">First Name</label>
+		<input id="firstName" class="form-control" th:field="*{firstName}" required autofocus="autofocus"/>
+		
+	</div>
+	<div class="form-group">
+		
+		<label class="control-lable" for="lastName">Last Name</label>
+		<input id="lastName" class="form-control" th:field="*{lastName}" required autofocus="autofocus"/>
+		
+	</div>
+	<div class="form-group">
+		
+		<label class="control-lable" for="email">Email</label>
+		<input id="email" class="form-control" th:field="*{email}" required autofocus="autofocus"/>
+		
+	</div>
+	<div class="form-group">
+		
+		<label class="control-lable" for="email">Password</label>
+		<input id="password" class="form-control" th:field="*{password}" required autofocus="autofocus"/>
+		
+	</div>
+	<div class="form-group">
+		
+		<button type="submit" class ="btn btn-success"style="background-color: rgb(64, 0, 64)">Register</button>
+		<span>Already registered?<a href ="/"th:href ="@{login}"></a></span>
+		
+	</div>
+	
+	</div>
+	
+	
+</form>
+
+</body>
+</html>
