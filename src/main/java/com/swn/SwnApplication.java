@@ -9,6 +9,7 @@ public class SwnApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SwnApplication.class, args);
+		System.out.println("----------------------------------------------------------Springboot-Security application started-----------------------------------------------------------");
 	}
 	
 	@RequestMapping(value="/test")
